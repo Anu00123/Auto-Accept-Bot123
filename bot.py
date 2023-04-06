@@ -38,7 +38,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__Powerd By : @mmaxmovie__**".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__Powerd By : @MnLinksZ__**".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -58,18 +58,18 @@ async def op(_, m :Message):
                         InlineKeyboardButton("OTT EXPLORER 🕊️", url="https://t.me/+lwYLN-cyVJ1hYzU1"),
                         InlineKeyboardButton("MOVIE MAX || HD", url="https://t.me/+t4OM8GE5oGJjNGNl")
                     ],[
-                        InlineKeyboardButton("JOIN OUR REQUEST MOVIE GROUP", url="https://t.me/+oSJ17l78prliYzQ1")
+                        InlineKeyboardButton("Bot Update ", url="https://t.me/+b7ikrOXoBtRiMGQ1")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://te.legra.ph/file/b72a4501fb93ff4e06ba9.jpg", caption="**🦊 Hello👋 {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @mmaxmovie__**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://te.legra.ph/file/b72a4501fb93ff4e06ba9.jpg", caption="**🦊 Hello👋 {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @MnLinksZ__**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("NEW MOVIE CHANNEL", url="https://t.me/+EZJURutGoQc4YTA1")
+                        InlineKeyboardButton("Bot Update Channel ", url="https://t.me/+b7ikrOXoBtRiMGQ1")
                     ]
                 ]
             )
